@@ -1,0 +1,75 @@
+{% extends 'core/base.html' %}
+<title>{% block title %}contact{% endblock %}</title>
+
+{% block content %}
+<div class="container text-white mt-5">
+	<h1 class="text-warning border-bottom">CONTACT US</h1>
+	<p class="mt-5 text-center">Do you have any question? Please do not hesitate to contact. I will come back to you within a matter of hours to help you .</p>
+
+<!-- related to  form code start here -->
+<form>
+  <div class="row">
+		<div class="col-sm-5">
+
+		<div class="form-group"> 
+		  	<label>your name</label>
+		  	<input type="text" name="" class="form-control">
+		</div>
+	</div>
+	<div class="col-sm-5">
+		<div class="form-group"> 
+		  	<label>your email*</label>
+		  	<input type="email" name="" class="form-control" required>
+		</div>
+	</div>
+	<div class="col-sm-2 text-center mt-3 ">
+		<i class="fas fa-map-marker-alt i-color"></i>
+		<p class="ss-color">Khalilabad,utterpradesh india</p>
+	</div>
+
+  </div>
+<!-- second row start here -->
+<div class="row">
+	<div class="col-sm-10">
+		<div class="form-group">
+			<label>Your Subject</label>
+			<input type="text" name="" class="form-control">
+		</div>
+	</div>
+	<div class="col-sm-2 text-center mt-3">
+		<i class="fas fa-phone i-color"></i>
+		<p>+917501151678</p>
+	</div>
+</div>
+
+<!-- third row start here -->
+ <div class="row">
+ 	<div class="col-sm-10">
+ 		<div class="form-group">
+ 			<label>Your message*</label>
+ 			<!-- <input type="textarea" name="" class="form-control"> -->
+ 			<textarea class="form-control" required></textarea>
+ 		</div>
+ 	</div>
+ 	<div class="col-sm-2 mt-3 text-center">
+ 		<i class="fas fa-envelope-open-text i-color"></i>
+ 		<p>surya@gmail.com</p>
+ 	</div>
+ </div>
+ <button type="submit" class="btn btn-info">Send</button>
+ <!-- create row for social media -->
+ <div class="row text-center mt-5">
+ 	<div class="col-sm-12 i-color">
+ 	<a href="http://127.0.0.1:8000/services/"><i class="fab fa-twitter i-color"></i></a>
+ 	<i class="fab fa-facebook i-color"></i>
+ 	<i class="fab fa-instagram-square i-color"></i> 	
+ 	<i class="fab fa-chrome i-color"></i>	
+ 	</div>
+ </div>
+
+
+</form>
+</div>
+
+
+{% endblock content %}
